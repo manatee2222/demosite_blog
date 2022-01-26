@@ -106,15 +106,15 @@ border-left: 1px solid #ddd;
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url(img/photo1.jpg);
+    background:url(photo1.jpg);
 }
 
 .slider-item02 {
-    background:url(img/photo2.jpg);
+    background:url(photo2.jpg);
 }
 
 .slider-item03 {
-    background:url(img/photo3.jpg);
+    background:url(photo3.jpg);
 }
 
 .slider-item {
@@ -451,16 +451,16 @@ h1{
 }
 
 .l1 {
-  background-image: url(img/li1.jpg);
+  background-image: url(li1.jpg);
   
 }
 
 .l2 {
-  background-image: url(img/li2.jpg);
+  background-image: url(li2.jpg);
 }
 
 .l3 {
-  background-image: url(img/li3.jpg);
+  background-image: url(li3.jpg);
 }
 
 
