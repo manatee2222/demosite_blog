@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* タブレット向けレイアウト */
+/* ブレイクポイントをmax-width: 1000pxに指定してください */
+@media screen and (max-width:1000px) {
+  .infocontainer {
+    height: 800px;
+    
+  }
+ 
+}
+  
+  /* スマートフォン向けレイアウト */
+  /* ブレイクポイントをmax-width: 670pxに指定してください */
+  @media screen and (max-width:670px) {
+
+
+    /* 以下、area_guide */
+    .area_guide {
+      width: auto;
+      height: 1000px;
+    }
+
+
+    .area_guide ul {
+      display: block;
+      text-align: center
+      
+     }
+     .area_guide li {
+       margin-bottom: 10px;
+     }
+
+     .area_guide a {
+      margin-left: 10px;
+      height: 250px;
+      width: 230px;
+      
+    }
+
+
+    /*以下、footer*/
+    .infocontainer {
+      height: 900px;
+      
+    }
+    .infocontainer ul {
+      margin: 0;
+      height: 230px;
+    }
+    
+  }
