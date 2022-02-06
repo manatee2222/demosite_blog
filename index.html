@@ -1,125 +1,96 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="JP">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-    <title>Document</title>
-
-    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Aqualand</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="responsive.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <div class="navi_left ">
+<!--==============Header===============-->
+<header>
+
+    <div class="menu_btn">
             <ul>
-                <li class="yellow"><a href="">TOP</a></li>
-                <li class="yellow"><a href="">ボタン2</a></li>
-                <li class="yellow"><a href="">ボタン3</a></li>
-                <li class="yellow"><a href="">ボタン4</a></li>
-                <li class="yellow"><a href="">ボタン5</a></li>
-                <li class="yellow"><a href="">ボタン6</a></li>
-                <li class="yellow"><a href="">ボタン7</a></li>
-                <li class="yellow"><a href="">ボタン8</a></li>
-                <li class="yellow"><a href="">ボタン9</a></li>
-            </ul>
-        </div>
+            <li><a href=""><span class="fa fa-facebook fa-2x"></span></a></li>
+            <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
 
-        <div class="navi_right ">
-            <ul>
-                <li class="yellow"><a href="">ボタン10</a></li>
-                <li class="yellow"><a href="">ボタン11</a></li>
-                <li class="yellow"><a href="">ボタン12</a></li>
-                <li class="yellow"><a href="">ボタン13</a></li>
-            </ul>
-        </div>
-
-        <div class="navi_center">
-            <ul>
-                <li><a href=""><span class="fa fa-facebook fa-2x"></span></a></li>
-                <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
-            </ul>
-        </div>
-        
-
-
-    </header>
-
-    <div class="wrapper">
-        <h1>Welcome to <br>Aqualand</h1>
-        <ul class="slider">
-          <li class="slider-item slider-item01"></li>
-          <li class="slider-item slider-item02"></li>
-          <li class="slider-item slider-item03"></li>
         </ul>
-      <!--/wrapper-->
-    </div>
-        
-    <div class="info_container">
-        <div class="infopanel">
-            <div class="time">
-                <p>本日の営業時間</p>
-                <h3>09:00～17:00</h3>
-            </div>
-    
-            <div class="congestion">
-                <p>現在の混雑状況</p> <h3>1%</h3>
-            </div>
-    
-            <ul class="left_panel">
-                <li><a href="">料金</a></li>
-                <li><a href="">レストラン・ショップ</a></li>
-                <li><a href="">バリアフリー情報</a></li>
-                <li><a href="">館内マップ</a></li>
-            </ul>
-    
-            <ul class="right_panel"> 
-                <li ><a href="">アクセス</a></li>
-                <li ><a href="">館内サービスガイド</a></li>
-                <li ><a href="">プログラム</a></li>
-                <li ><a href="">年間パスポート</a></li>
-            </ul>
-    
-        </div>
-        
-        <div class="tab_info">
-            <ul class="tab">
-              <li><a href="#lunch">最新情報</a></li>
-              <li><a href="#drink">館内情報</a></li>
-              <li><a href="#dinner">イベント情報</a></li>
-            </ul>
-          
-              <div id="lunch" class="area">
-                <h2>最新情報</h2>
-                <ul> 
-                  <li><a href="">トピック1：XXXに関するお知らせ</a></li>
-                  <li><a href="">トピック2：XXXについて</a></li>
-                  <li><a href="">トピック3：XXXのご案内</a></li>
-                </ul>
-              <!--/area--></div>
-              <div id="drink" class="area">
-                <h2>館内情報</h2>
-                <ul>
-                    <li><a href="">トピック1</a></li>
-                    <li><a href="">トピック2</a></li>
-                    <li><a href="">トピック3</a></li>
-              <!--/area--></div>
-              <div id="dinner" class="area">
-                <h2>イベント情報</h2>
-                <ul>
-                  <li><a href="">トピック1</a></li>
-                  <li><a href="">トピック2</a></li>
-                  <li><a href="">トピック3</a></li>
-                </ul>
-              <!--/area--></div>
-          <!--wrapper--></div>
-    </div>
+        <span class="fa fa-bars menu-icon" id="menu-show"></span>  
+    </div>   
 
-    <div class="second">
+</header>
+
+<!--==============Header_menu===============-->
+
+<div id="header_menu">
+    <ul>
+        <li><a href="">TOP</a></li>
+        <li><a href="">ボタン2</a></li>
+        <li><a href="">ボタン3</a></li>
+        <li><a href="">ボタン4</a></li>
+        <li><a href="">ボタン5</a></li>
+        <li><a href="">ボタン6</a></li>
+        <li><a href="">ボタン7</a></li>
+        <li><a href="">ボタン8</a></li>
+        <li><a href="">ボタン9</a></li>
+        <li><a href="">ボタン10</a></li>
+        <li><a href="">ボタン11</a></li>
+        <li><a href="">ボタン12</a></li>
+        <li class="close-modal"><a href=""><i class="fa fa-2x fa-times"></i></a></li>
+        
+    </ul>
+    
+</div>
+
+
+<!--==============Slider===============-->
+<div class="wrapper">
+    <h1>Welcome <br>to<br>Aqualand</h1>
+    <ul class="slider">
+      <li class="slider-item slider-item01"></li>
+      <li class="slider-item slider-item02"></li>
+      <li class="slider-item slider-item03"></li>
+    </ul>
+</div>
+<!--==============Information_container===============-->
+<div class="info_container">
+    <div class="infopanel">
+        <div class="time">
+            <p>本日の営業時間</p>
+            <h3>09:00～17:00</h3>
+        </div>
+
+        <div class="congestion">
+            <p>現在の混雑状況</p> <h3>1%</h3>
+        </div>
+
+        <ul class="left panel">
+            <li><a href="">料金</a></li>
+            <li><a href="">レストラン・ショップ</a></li>
+            <li><a href="">バリアフリー情報</a></li>
+            <li><a href="">館内マップ</a></li>
+        </ul>
+
+        <ul class="right panel"> 
+            <li ><a href="">アクセス</a></li>
+            <li ><a href="">館内サービスガイド</a></li>
+            <li ><a href="">プログラム</a></li>
+            <li ><a href="">年間パスポート</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<!--==============Area_guide===============-->    
+    <div class="area_guide">
         <h2>AREA GUIDE</h2>
         <p>エリアガイド</p>
 
@@ -136,6 +107,8 @@
 
         </ul>      
     </div>
+
+<!--==============Footer===============-->
 
     <div class="footer">
         <div class="infocontainer">
@@ -212,18 +185,9 @@
             &copy;2022 XXX
         </div>
     </div>
-
-
-
-
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-     <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/js/5-4-1.js"></script> 
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-     <script src="function.js"></script>
-      
-      
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="function.js"></script>
 
 </body>
 </html>
