@@ -76,8 +76,10 @@ header {
   background-color: lightsteelblue;
   border-radius: 10px;
   display: none;
-  transition: 3.0s;
+  top: 0;
   position: sticky;
+  z-index: 11 !important; 
+
 }
 
 #header_menu ul {
