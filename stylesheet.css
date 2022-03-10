@@ -24,7 +24,7 @@ header {
   background-color: black;
   position: sticky;
   top: 0px;
-  z-index: 999 !important;
+  z-index: 11 !important;
   
   }
 
